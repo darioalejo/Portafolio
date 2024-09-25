@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAV */
+
+nav {
+    background-color: #000000;
+    width: 100%; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 15px;
+    box-sizing: border-box;
+    animation: fadeDown 0.5s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#logo {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    align-items: center; /* Opcional, para centrar verticalmente */
+}
+
+
+.link-container {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-grow: 1; 
+}
+
+.link-nav {
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 25px 15px;
+    display: inline-block; 
+}
+
+.link-nav:hover {
+    color: rgb(255, 255, 255);
+    background-color: #292b2c; 
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeDown {
+    0% {
+        top: -40px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+header {
+    margin-bottom: 100px; 
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* PROYECTOS */
+
+.proyectos-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.proyectos-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.proyecto {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+.proyecto-imagen {
+    width: 400px; 
+    height: 200px; 
+    border: 2px solid #000;
+    border-radius: 10px;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.proyecto-imagen:hover {
+    transform: scale(1.1);
+}
+
+.proyecto-boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    pointer-events: none; 
+}
+

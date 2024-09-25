@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/adidas-logo.png" sizes="16x16 32x32 48x48" type="image/png">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Navegacion -->
+        <nav>
+            <a href="../../menu.html">
+                <img src="../../../img/work/back.png" alt="logo" id="logo"></a>
+            <div class="link-container">
+                <img src="https://i.pinimg.com/474x/8d/98/10/8d9810e8710509599ad5c6d7e01c4193.jpg" alt="logo" id="logo">
+                <a href=#welcome class="link-nav">Inicio</a>
+                <a href=#seccion-alumnos class="link-nav">Quienes somos</a>
+                <a href=#seccion-materias class="link-nav">Embajadores</a>
+                <a href=#seccion-vidaestudiantil class="link-nav">Tienda</a>
+            </div>
+        </nav>
+
+        <!-- Imagen de bienvenida a la pagina web -->
+        <div id="welcome">
+            <div class="opacidad-welcome"></div>
+            <h1 id="letra">Lo mejor de Adidas</h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la pagina -->
+    <main>
+        <!-- Seccion Alumnos -->
+        <section class="seccion" id="seccion-alumnos">
+            <h2>Adidas</h2>
+            <p id="SN">En Adidas, nuestra pasión por el deporte nos impulsa a crear productos innovadores que mejoran el rendimiento y conectan a las personas. Desde 1949, hemos liderado la industria deportiva con un enfoque en la sostenibilidad y la creatividad. Somos más que una marca; somos una comunidad global que inspira a todos a superar sus límites.</p>
+        </section>
+
+        <!-- Seccion Materias -->
+        <section id="seccion-materias">
+            <div class="video-container">
+                <video id="miVideo" autoplay muted loop>
+                    <source src="img/messi.webm" type="video/webm">
+                    Tu navegador no soporta la etiqueta video.
+                </video>
+                <div class="overlay-text">
+                    <h2>Lionel Messi</h2>
+                    <p id="txt-sn">Considerado uno de los mejores futbolistas de todos los tiempos, Messi representa la excelencia y la innovación en cada paso que da en el campo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Vida Estudiantil -->
+        <section class="seccion" id="seccion-vidaestudiantil">
+            <div id="titulo-contenedor">
+                <h2>Tienda</h2>
+                <p id="txt-menu">Conoce los modelos de ropa y calzado más aclamados</p>
+                <button class="comprar-ahora" onclick="window.location.href='https://www.adidas.com/ec/es/terrex';">Comprar ahora</button>
+            </div>
+            
+            <!-- Cards -->
+            <div id="card-container">
+                <div class="card">
+                    <img class="img-card" src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/435b400360894f4db2f4acfd0135eebd_9366/FY7978_09_standard.jpg" alt="Zapatos">
+                    <div class="edad-container">
+                        <h1 class="edad">99,99$</h1>
+                    </div>
+                    <p class="p-card" id="c1">Nuestros zapatos son más que simples calzados; son una extensión de tu estilo de vida y tu rendimiento. En Adidas, cada par está diseñado con precisión para ofrecerte el máximo confort y soporte en cada paso. </p>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="https://assets.adidas.com/images/w_450,f_auto,q_auto/94fec2a24cd84e978ddec73df0195fa3_9366/IU2102_HM1.jpg" alt="camisas">
+                    <div class="edad-container">
+                        <h1 class="edad">20$</h1>
+                    </div>
+                    <p class="p-card" id="c2">Las camisas de Adidas son la fusión perfecta entre comodidad y estilo. Diseñadas con materiales de alta calidad, nuestras camisas están pensadas para acompañarte en cualquier actividad, desde entrenamientos intensos hasta momentos de relajación.</p>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="https://assets.adidas.com/images/w_940,f_auto,q_auto/43a1a2165f394b9e98ca0b18e24a0c94_9366/IJ0764_05_hover_standard.jpg" alt="Accesorios">
+                    <div class="edad-container">
+                        <h1 class="edad">20$</h1>
+                    </div>
+                    <p class="p-card" id="c3">Adidas te ofrece una selección curada de productos que se adaptan a todos los aspectos de tu vida activa. Desde accesorios esenciales como mochilas y gorros, hasta equipamiento especializado para tus entrenamientos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <!-- Redes Sociales -->
+        <div id="redes-footer">
+            <a href="https://www.facebook.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>
+            <a href="https://www.tiktok.com/es/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+            <p class="copyright-p">Todos los derechos reservados</p>
+            <p class="copyright-p">Desarrollado por Dario Flores</p>
+        </div>
+    </footer>
+</body>
+</html>
